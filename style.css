@@ -1,0 +1,456 @@
+/* =====================================================
+   ملف التنسيقات الرئيسي لموقع Car Zone
+   يتحكم في شكل الهيدر + الأقسام + كروت السيارات + الفوتر
+   ===================================================== */
+
+/* ===== 1. الهيدر العلوي الثابت ===== */
+/* الشريط الأبيض العلوي الذي يحتوي على اللوجو والقائمة */
+.header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
+    width: 100%;
+    height: 80px;
+    align-items: center;
+    justify-items: center;
+    position: fixed;
+    /* يبقى ثابت أعلى الصفحة أثناء التمرير */
+    top: 0;
+    left: 0;
+    border-bottom: 2px solid;
+    border-color: red;
+    border-radius: 0px 0px 12px 12px;
+}
+
+/* ===== 2. المحتوى الرئيسي ===== */
+/* إبعاد المحتوى عن الهيدر الثابت حتى لا يختفي تحته */
+main {
+    padding-top: 80px;
+}
+
+/* ===== 3. صورة اللوجو داخل الهيدر ===== */
+.header img {
+    width: 150px;
+    height: 60px;
+    margin-left: 15px;
+}
+
+/* ===== 4. قائمة التنقل ===== */
+/* الحاوية التي تضم روابط Home - Cars - About ... */
+.navbar {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+    justify-items: center;
+    align-items: center;
+}
+
+/* ===== 5. روابط القائمة ===== */
+/* شكل الرابط الواحد داخل القائمة */
+.nava {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    font-size: 18px;
+}
+
+/* لون الرابط عند مرور الماوس عليه */
+.nava:hover {
+    color: blue;
+}
+
+/* ===== 6. قسم عرض السيارة - نسختان بنفس التنسيق ===== */
+/* تم فصل الكلاس المشترك إلى كلاسين مستقلين بنفس الكود */
+/* .home-carsection خاص بصفحة home (index.html) */
+/* .details-carsection خاص بصفحة benz details */
+/* يحتويان على صورة كبيرة + نص جانبي - نفس الشكل تماما */
+.home-carsection {
+    background-color: rgb(228, 224, 220);
+    width: 90%;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    justify-self: center;
+    align-content: center;
+    display: flex;
+    gap: 2rem;
+    padding: 1%;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: blue;
+}
+
+.details-carsection {
+    background-color: rgb(228, 224, 220);
+    width: 90%;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+    display: flex;
+    gap: 2rem;
+    padding: 1%;
+    border-radius: 15px;
+    border: 1px solid;
+}
+
+/* صورة السيارة الكبيرة داخل قسم العرض */
+/* نفس التنسيق مطبق على صور القسمين */
+.home-carsection img {
+    width: 600px;
+    height: 350px;
+    border-radius: 15px;
+    border: 1px solid;
+    border-color: red;
+}
+
+.details-carsection img {
+    width: 600px;
+    height: 350px;
+    border-radius: 15px;
+}
+
+/* تنسيق خاص لصورة الصفحة الرئيسية */
+.carb {
+    width: 730px;
+    max-width: 370px;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+}
+
+/* عنوان الشعار في الصفحة الرئيسية */
+.section {
+    margin-left: 30px;
+}
+
+/* ===== 7. التجاوب مع الشاشات الصغيرة ===== */
+/* عندما تكون الشاشة أقل من 850px تتحول الصورة والنص فوق بعض */
+/* نفس السلوك مطبق على القسمين */
+@media (max-width: 960px) {
+    .home-carsection {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    .details-carsection {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+    }
+
+    .home-carsection img {
+        width: 400px;
+        height: 250px;
+        margin-top: 10px;
+    }
+
+    .details-carsection img {
+        width: 380px;
+        height: 250px;
+    }
+}
+
+/* ===== 8. زر استكشاف السيارات ===== */
+/* الزر الأحمر في الصفحة الرئيسية الذي ينقل لصفحة cars.html */
+.explore {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(235, 12, 12);
+    padding: 15px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+    margin-top: 40px;
+    box-shadow: 2px 2px 2px #c4aaaa;
+    font-weight: 500;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.explore:hover {
+    transform: scale(1.1);
+    color: black;
+}
+
+.explore:active {
+    transform: scale(0.9);
+    color: white;
+}
+
+/* ===== 9. حاوية كروت السيارات ===== */
+/* الحاوية التي ترص الكروت جنب بعض في صفحة cars.html */
+.cars {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* ينزل الكروت لسطر جديد عند ضيق الشاشة */
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    scroll-margin-top: 125px;
+}
+
+/* ===== 10. كارت السيارة الواحد ===== */
+.car {
+    background-color: rgb(233, 230, 221);
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 15px;
+    border: 1px solid;
+}
+
+/* صورة السيارة داخل الكارت */
+.car img {
+    width: 280px;
+    height: 200px;
+    border-radius: 13px;
+    object-fit: cover;
+}
+
+/* ===== 11. زر الحجز Book now ===== */
+.booknow {
+    background-color: transparent;
+    background: none;
+    border: none;
+    background-color: rgb(236, 222, 18);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* شكل المؤشر عند المرور على زر الحجز */
+.booknow:hover {
+    cursor: pointer;
+}
+
+/* لون النص عند الضغط على زر الحجز */
+.booknow:active {
+    color: beige;
+}
+
+/* ===== 12. الخط الفاصل داخل الكارت ===== */
+.line {
+    width: 190px;
+    color: black;
+}
+
+/* ===== 13. قائمة أنواع السيارات ===== */
+/* قائمة Mercedes - BMW - Toyota في الصفحة الرئيسية */
+.cartypes {
+    font-size: 25px;
+}
+
+/* ===== 14. صورة شاحنة مرسيدس في صفحة التفاصيل ===== */
+.m {
+    max-width: 540px;
+}
+
+/* ===== 15. صندوق مواصفات السيارة ===== */
+/* الصندوق البيج الذي يعرض قائمة المواصفات في benz details.html */
+.details {
+    background-color: bisque;
+    width: 90%;
+    border-radius: 10px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+    justify-self: center;
+    align-content: left;
+    display: flex;
+    gap: 2rem;
+    padding: 1%;
+    border-radius: 15px;
+    border: 1px solid;
+    margin-top: 20px;
+}
+
+/* ===== 16. قسم لماذا تختارنا ===== */
+/* الصندوق الذي يعرض مميزات الموقع في الصفحة الرئيسية */
+.why {
+    margin-top: 20px;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+/* عنوان الصندوق */
+.why legend {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* عناصر القائمة داخل الصندوق */
+.why li {
+    font-size: 20px;
+}
+
+/* ===== 17. الفوتر السفلي ===== */
+/* الشريط السفلي الموجود في كل الصفحات */
+footer {
+    text-align: center;
+    height: 60px;
+    background-color: beige;
+    padding: 10px;
+}
+
+.carphotos {
+    background-color: bisque;
+    width: 90%;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    gap: 1rem;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    display: flex;
+    border: 1px solid;
+    border-color: red;
+
+
+}
+
+.carphotos img {
+    border-radius: 10px;
+    width: 270px;
+    height: 190px;
+    object-fit: cover;
+    border: 1px solid;
+    border-color: blue;
+}
+
+@media(max-width:990px) {
+    .carphotos {
+        display: grid;
+        flex-direction: column;
+        width: 420px;
+
+    }
+
+    .carphotos img {
+        width: 400px;
+        height: 300px;
+    }
+}
+
+img {
+    object-fit: cover;
+}
+
+/* ===== 18. صفحة التواصل Contact ===== */
+/* كلاسات مستقلة خاصة بصفحة catntact.html فقط */
+/* لا تعتمد على كلاس details القديم حتى يظهر أي تعديل جديد فورا */
+
+/* عنوان الصفحة الرئيسي */
+.contact-title {
+    margin-top: 10px;
+    font-size: 32px;
+}
+
+/* العنوان الفرعي الترحيبي */
+.contact-subtitle {
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* الحاوية الخارجية لكروت التواصل */
+.contact-section {
+    background-color: rgb(228, 224, 220);
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid;
+    justify-content: center;
+    justify-self: center;
+    align-items: stretch;
+}
+
+/* كارت التواصل الواحد */
+.contact-card {
+    background-color: #fff;
+    width: 250px;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* عنوان داخل كارت التواصل */
+.contact-card h3 {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* التجاوب مع الشاشات الصغيرة */
+@media (max-width: 700px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+
+    .contact-card {
+        width: 90%;
+    }
+}
+
+.services {
+    background-color: bisque;
+    border-radius: 10px;
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    gap: 1rem;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border-color: red;
+
+}
+
+.service {
+    background-color: rgb(235, 230, 225);
+    width: 180px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: blue;
+    box-shadow: 2px 2px 2px;
+    transition: transform 0.3s ease;
+}
+
+.service:hover {
+    transform: scale(1.07);
+    cursor: pointer;
+}

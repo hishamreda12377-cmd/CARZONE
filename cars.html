@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!-- نوع المستند: صفحة HTML5 - صفحة عرض السيارات -->
+<html lang="en">
+
+<head>
+    <!-- ===== إعدادات الصفحة الأساسية ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- عنوان التبويب في المتصفح -->
+    <title>carzone_cars</title>
+    <!-- ملف التنسيقات الخارجي الخاص بكل الصفحات -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== الهيدر العلوي الثابت ===== -->
+    <!-- يحتوي على اللوجو + قائمة التنقل الرئيسية -->
+    <header class="header">
+        <!-- اللوجو: صورة تضغط عليها ترجع للصفحة الرئيسية -->
+        <a href="index.html"><img src="OIP (1).webp" alt="logo"></a>
+
+        <!-- قائمة التنقل الرئيسية -->
+        <nav class="navbar">
+            <a class="nava" href="index.html">Home</a>
+            <a class="nava" href="cars.html">Cars</a>
+            <a class="nava" href="#">About</a>
+            <a class="nava" href="./services.html">Services</a>
+            <a class="nava" href="./catntact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ===== المحتوى الرئيسي للصفحة ===== -->
+    <main>
+        <hr>
+
+        <!-- العنوان الرئيسي لصفحة السيارات -->
+        <h1>Find Your Dream Car</h1>
+
+        <!-- ===== قسم سيارات مرسيدس ===== -->
+        <label for="Mercedes">Mercedes</label>
+        <hr>
+        <!-- حاوية كروت سيارات مرسيدس -->
+        <section class="cars" name="Mercedes">
+
+            <!-- كارت سيارة 1: Mercedes Benz -->
+            <div class="car">
+                <img src="./benz.webp"> <!-- صورة السيارة -->
+                <h3 class="carname">Mercedes Benz</h3> <!-- اسم السيارة -->
+                <hr class="line"> <!-- خط فاصل داخل الكارت -->
+                <p class="price">Prices start at $960,000.</p> <!-- سعر السيارة -->
+                <button class="booknow">Book now</button> <!-- زر الحجز -->
+                <br>
+                <a href="#" class="cardetails">view car details</a> <!-- رابط تفاصيل السيارة -->
+            </div>
+
+            <!-- كارت سيارة 2: Mercedes Benz Actros -->
+            <div class="car">
+                <img src="./mtruck.webp">
+                <h3 class="carname">Mercedes Benz Actros</h3>
+                <hr class="line">
+                <p class="price">Prices start at $960,000.</p>
+                <button class="booknow">Book now</button>
+                <br>
+                <!-- هذا الرابط الوحيد الذي ينقل لصفحة تفاصيل حقيقية -->
+                <a href="./benz details.html" class="cardetails">view car details</a>
+            </div>
+
+            <!-- كارت سيارة 3: Mercedes Benz pickup -->
+            <div class="car">
+                <img src="./mpickup.webp">
+                <h3 class="carname">Mercedes Benz pickup</h3>
+                <hr class="line">
+                <p class="price">Prices start at $960,000.</p>
+                <button class="booknow">Book now</button>
+                <br>
+                <a href="#" class="cardetails">view car details</a>
+            </div>
+
+        </section>
+
+        <!-- ===== قسم سيارات BMW ===== -->
+        <label for="bmw">BMW</label>
+        <hr>
+        <!-- حاوية كروت سيارات BMW -->
+        <section class="cars" name="bmw" id="bmw">
+
+            <!-- كارت سيارة 1: BMW M5 -->
+            <div class="car">
+                <img src="./bmwm5.webp">
+                <h3 class="carname">BMW M5 </h3>
+                <hr class="line">
+                <p class="price">Prices start at $960,000.</p>
+                <button class="booknow">Book now</button>
+                <br>
+                <a href="#" class="cardetails">view car details</a>
+            </div>
+
+            <!-- كارت سيارة 2: BMW SUV -->
+            <div class="car">
+                <img src="./bmwsuv.webp">
+                <h3 class="carname">BMW SUV</h3>
+                <hr class="line">
+                <p class="price">Prices start at $960,000.</p>
+                <button class="booknow">Book now</button>
+                <br>
+                <a href="#" class="cardetails">view car details</a>
+            </div>
+
+            <!-- كارت سيارة 3: BMW M340i -->
+            <div class="car">
+                <img src="./340i.webp">
+                <h3 class="carname">BMW M340i</h3>
+                <hr class="line">
+                <p class="price">Prices start at $960,000.</p>
+                <button class="booknow">Book now</button>
+                <br>
+                <a href="#" class="cardetails">view car details</a>
+            </div>
+
+        </section>
+
+        <!-- ===== قسم سيارات تويوتا ===== -->
+        <label for="toyota">TOYOTA</label>
+        <hr>
+        <!-- حاوية كروت سيارات تويوتا -->
+        <section class="cars" name="toyota">
+
+            <!-- كارت سيارة 1: Toyota Supra -->
+            <div class="car">
+                <img src="./supra.webp">
+                <h3 class="carname">Toyota Supra </h3>
+                <hr class="line">
+                <p class="price">Prices start at $960,000.</p>
+                <button class="booknow">Book now</button>
+                <br>
+                <a href="#" class="cardetails">view car details</a>
+            </div>
+
+            <!-- كارت سيارة 2: Toyota Corolla -->
+            <div class="car">
+                <img src="./crolla.webp">
+                <h3 class="carname">Toyota Corolla</h3>
+                <hr class="line">
+                <p class="price">Prices start at $960,000.</p>
+                <button class="booknow">Book now</button>
+                <br>
+                <a href="#" class="cardetails">view car details</a>
+            </div>
+
+            <!-- كارت سيارة 3: Toyota Hilux -->
+            <div class="car">
+                <img src="./hilux.webp">
+                <h3 class="carname">Toyota Hilux</h3>
+                <hr class="line">
+                <p class="price">Prices start at $960,000.</p>
+                <button class="booknow">Book now</button>
+                <br>
+                <a href="#" class="cardetails">view car details</a>
+            </div>
+            </section>
+
+
+
+
+        
+        
+        
+        
+
+            <label for="hyundai">hyundai</label>
+        <hr>
+        <!-- حاوية كروت سيارات تويوتا -->
+        <section class="cars" name="Hyundai">
+
+            <!-- كارت سيارة 1: Toyota Supra -->
+            <div class="car">
+                <img src="https://th.bing.com/th/id/OIP.TdILw37Z2k1JVHXWajHWmAHaEc?w=327&h=180&c=7&r=0&o=7&pid=1.7&rm=3">
+                <h3 class="carname">Hyundai Tucsan </h3>
+                <hr class="line">
+                <p class="price">Prices start at $960,000.</p>
+                <button class="booknow">Book now</button>
+                <br>
+                <a href="#" class="cardetails">view car details</a>
+            </div>
+
+            <!-- كارت سيارة 2: Toyota Corolla -->
+            <div class="car">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.VXM8wqcV4R7W8hN-2ozTbgHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+                <h3 class="carname">Hyundai Elentra </h3>
+                <hr class="line">
+                <p class="price">Prices start at $960,000.</p>
+                <button class="booknow">Book now</button>
+                <br>
+                <a href="#" class="cardetails">view car details</a>
+            </div>
+
+            <!-- كارت سيارة 3: Toyota Hilux -->
+            <div class="car">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.L5YQDKHrBUuSTJcf86ob_AHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3">
+                <h3 class="carname">Hyundai Avante</h3>
+                <hr class="line">
+                <p class="price">Prices start at $960,000.</p>
+                <button class="booknow">Book now</button>
+                <br>
+                <a href="#" class="cardetails">view car details</a>
+            </div>
+
+        </section>
+
+        <!-- ===== الفوتر السفلي ===== -->
+        <!-- حقوق الملكية واسم المطور -->
+        <footer>
+            <p>developed by hisham reda</p>
+            <P>@copy rigths reversed to carzone</P>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

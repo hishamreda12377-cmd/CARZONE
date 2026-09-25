@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- نوع المستند: صفحة HTML5 - الصفحة الرئيسية للموقع -->
+<html lang="en">
+
+<head>
+    <!-- ===== إعدادات الصفحة الأساسية ===== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- عنوان التبويب في المتصفح -->
+    <title>carzone_home</title>
+    <!-- ملف التنسيقات الخارجي الخاص بكل الصفحات -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== الهيدر العلوي الثابت ===== -->
+    <!-- يحتوي على اللوجو + قائمة التنقل الرئيسية -->
+    <header class="header">
+        <!-- اللوجو: صورة تضغط عليها ترجع للصفحة الرئيسية -->
+        <a href="index.html"><img src="OIP (1).webp" alt="logo"></a>
+
+        <!-- قائمة التنقل الرئيسية -->
+        <nav class="navbar">
+            <a class="nava" href="index.html">Home</a>
+            <a class="nava" href="cars.html">Cars</a>
+            <a class="nava" href="#">About</a>
+            <a class="nava" href="./services.html">Services</a>
+            <a class="nava" href="./catntact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- ===== المحتوى الرئيسي للصفحة ===== -->
+    <main>
+        <hr>
+
+        <!-- العنوان الترحيبي / الشعار التسويقي للموقع -->
+        <h1 class="section"><i>Car Zone: A name that stands for trust</i></h1>
+
+        <!-- ===== قسم البطل Hero Section ===== -->
+        <!-- صورة السيارة الرئيسية + النص التعريفي وأنواع السيارات -->
+        <!-- يستخدم كلاس home-carsection الخاص بصفحة home فقط -->
+        <div class="home-carsection">
+            <!-- صورة السيارة الرئيسية في الصفحة الرئيسية -->
+            <img claas="carb" src="./car2.png">
+
+            <!-- النص الجانبي بجانب الصورة -->
+            <div class="text">
+                <!-- العنوان الرئيسي للقسم -->
+                <h1>Find Your Dream Car</h1>
+                <br>
+                <!-- قائمة أنواع / ماركات السيارات المتوفرة -->
+                <ul class="cartypes">
+                    <li class="type">Mercedes</li>
+                    <li class="type">BMW</li>
+                    <li class="type">Toyota</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ===== قسم لماذا تختارنا ===== -->
+        <!-- مربع يعرض مميزات الموقع -->
+        <fieldset class="why">
+            <legend>Why choose us?</legend>
+            <ul>
+                <li>💰Affordable prices</li>
+                <li>🚗A variety of cars</li>
+                <li>⭐Hassle-free service</li>
+            </ul>
+        </fieldset>
+
+        <!-- ===== زر استكشاف السيارات ===== -->
+        <!-- ينقل المستخدم إلى صفحة cars.html -->
+        <a class="explore" href="cars.html">Explore Cars</a>
+
+        <!-- ===== الفوتر السفلي ===== -->
+        <!-- حقوق الملكية واسم المطور -->
+        <footer>
+            <p>developed by hisham reda</p>
+            <P>@copy rigths reversed to carzone</P>
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
