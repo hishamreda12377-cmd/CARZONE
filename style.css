@@ -2,7 +2,10 @@
    ملف التنسيقات الرئيسي لموقع Car Zone
    يتحكم في شكل الهيدر + الأقسام + كروت السيارات + الفوتر
    ===================================================== */
-
+body{
+    scroll-behavior:unset;
+    margin-bottom: 0%;
+}
 /* ===== 1. الهيدر العلوي الثابت ===== */
 /* الشريط الأبيض العلوي الذي يحتوي على اللوجو والقائمة */
 .header {
@@ -34,7 +37,7 @@ main {
 .header img {
     width: 150px;
     height: 60px;
-    margin-left: 15px;
+    margin-left: 15px;  
 }
 
 /* ===== 4. قائمة التنقل ===== */
@@ -89,10 +92,12 @@ main {
     width: 90%;
     border-radius: 10px;
     flex-direction: row;
+    align-self: center;
     align-items: center;
     justify-content: center;
     justify-self: center;
     align-content: center;
+    text-align: center;
     display: flex;
     gap: 2rem;
     padding: 1%;
@@ -114,6 +119,16 @@ main {
     width: 600px;
     height: 350px;
     border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-content: center;
+    text-align: center;
 }
 
 /* تنسيق خاص لصورة الصفحة الرئيسية */
@@ -159,6 +174,42 @@ main {
     .details-carsection img {
         width: 380px;
         height: 250px;
+    }
+}
+@media (max-width:480px){
+
+    .home-carsection{
+        padding: 20px;
+    }
+    .home-carsection img{
+        width: 330px;
+        margin-top: 1px;
+    }
+    .details-carsection{
+        padding: 20px;
+    }
+    .details-carsection img {
+        width: 330px;
+        margin-top: 1px;
+    }
+    .carphotos{
+        width: 90%;
+    }
+    .carphotos img{
+        width: 200px;
+    }
+    .header img{
+        width: 80px;
+        height: 60px;
+        padding: 0px;
+        object-fit: contain;
+    }
+    .navbar{
+        gap: 0.3rem;
+    }
+    .nava{
+        font-size: 15px;
+        padding: 2px;
     }
 }
 
@@ -313,6 +364,9 @@ footer {
     height: 60px;
     background-color: beige;
     padding: 10px;
+    bottom: 0;
+    margin-bottom: 0%;
+    margin-top: auto;
 }
 
 .carphotos {
@@ -453,4 +507,10 @@ img {
 .service:hover {
     transform: scale(1.07);
     cursor: pointer;
+}
+
+#cartypelabel{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 600;
 }
