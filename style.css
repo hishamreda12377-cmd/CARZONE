@@ -182,7 +182,7 @@ main {
         padding: 20px;
     }
     .home-carsection img{
-        width: 330px;
+        width: 340px;
         margin-top: 1px;
     }
     .details-carsection{
@@ -196,7 +196,10 @@ main {
         width: 90%;
     }
     .carphotos img{
-        width: 200px;
+        width: 190px;
+    }
+    .header{
+        padding-right: 3px;
     }
     .header img{
         width: 80px;
@@ -371,7 +374,7 @@ footer {
 
 .carphotos {
     background-color: bisque;
-    width: 90%;
+    width: 95%;
     margin-top: 20px;
     padding: 10px;
     border-radius: 10px;
@@ -389,7 +392,7 @@ footer {
 
 .carphotos img {
     border-radius: 10px;
-    width: 270px;
+    width: 220px;
     height: 190px;
     object-fit: cover;
     border: 1px solid;
